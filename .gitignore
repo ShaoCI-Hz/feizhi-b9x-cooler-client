@@ -1,0 +1,44 @@
+# 基础忽略规则
+.reasonix/
+.idea/
+.vscode/
+*.iml
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+# 本地环境配置（含本机绝对路径）
+local.properties
+**/local.properties
+key.properties
+*.jks
+*.keystore
+
+# Flutter / Dart
+.dart_tool/
+.packages
+.pub-cache/
+.pub/
+build/
+**/build/
+coverage/
+.flutter-plugins
+.flutter-plugins-dependencies
+*.dill
+app.*.symbols
+app.*.map.json
+
+# Android
+.gradle/
+**/.gradle/
+captures/
+*.apk.idsig
+
+# Windows
+**/windows/flutter/ephemeral/
+**/windows/runner/Release/
+**/windows/runner/Debug/
+*.pdb
+
+# 说明：dist/ 中的预编译产物需要一并发布，故不在此忽略。
